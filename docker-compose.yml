@@ -10,4 +10,6 @@ services:
       - .:/app
     environment:
       - POE_ACCESS_KEY=${POE_ACCESS_KEY}
+      - POE_TOKEN_B=${POE_TOKEN_B}
+      - POE_TOKEN_LAT=${POE_TOKEN_LAT}
     restart: unless-stopped
