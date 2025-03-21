@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  poe-bot:
+    build: .
+    container_name: user-workspace-poe-bot
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    environment:
+      - POE_ACCESS_KEY=${POE_ACCESS_KEY}
+    restart: unless-stopped
